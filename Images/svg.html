@@ -1,0 +1,32 @@
+<!--
+    SVG <svg>
+
+        É uma marcação, estilo HTML, mas não é para textos, e sim para fazer imagens. Possuímos elementos para gerar formas
+
+        Para entender melhor:
+        Imagem rasterizada X Imagem vetorizada
+            - rasterizada: imagem pixelada -  imagem feita a partir de pixels (.png, .jpg, .jpeg usadas na tag <img>)
+            - vetorizada: imagem feita a partir de algoritmos
+        Benefícios de imagens vetorizadas
+            - Mais leve e detalhada
+            - Maior acessibilidade e SEO
+            - Pode ser editada via CSS ou atributos
+            - Se colocada na page a partir de uma importação de imagem svg: imagem é guardada em cache, código mais sucinto (importa pelo img) | entretanto não dá para ser modificada
+        Desvantagens
+            - Pode ser mais complicado de trabalhar
+            - Quanto mais complexa a imagem, mais trabalho para o navegador
+            - Navegadores  mais antigos não possuem suporte para esta tag
+            - Se feito diretamente no código da página: pode poluir o código, as imagens não são guardadas em cache (tendo que ser feitas requisições toda vez p/ carregar a page)
+
+        *OBS: para fotografias, prefira usar imagens rasterizadas
+        *Há ferramentas certas para se criar uma imagem no formato svg
+-->
+
+<svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg" stroke="red" fill="grey">
+    <circle cx="50" cy="50" r="40" />
+    <circle cx="150" cy="50" r="4" />
+
+    <svg viewBox="0 0 10 10" x="200" width="100">
+        <circle cx="5" cy="5" r="4" />
+    </svg>
+</svg>

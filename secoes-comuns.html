@@ -1,0 +1,137 @@
+<!--
+    SEÇÕES COMUNS em documentos HTML
+
+    - Cabeçalho <header>
+    - Navegação <nav>
+    - Conteúdo principal  <main>
+    - Barra lateral <aside>
+    - Rodapé <footer>
+
+    *Não são obrigatórios, mas é recomendável que tenha, pois se torna um site bem mais intuitivo
+-->
+
+<!--
+    <header></header>
+
+    - Onde utilizar?
+        - Quando no início da página, é visto como global
+        - Ocupa a linha toda da página (ou seja, se for colocado um conteúdo na header e depois um conteúdo fora dela, eles ficarão um embaixo do outro | diferente de uma tag <span>, que ficaria um ao lado do outro)
+        - Pode ser utilizado em outros elementos semânticos como section, article
+        - header dentro de header ou footer? - NÃO! Perde o sentido/semântica
+    - Múltiplos headers podem ser utilizados - um header global (no body), outro numa section, por exemplo
+    - Não possui atributos específicos    
+    -->
+
+<!--
+        <nav></nav>
+        
+        - Representa uma seção que irá apontar para outras páginas ou áreas da página
+        - Geralmente é inserida dentro do header, mas pode ser vista em outras seções
+        - Esta tag geralmente é destinada a coisas mais importantes do site (posso ter uma nav na header, depois outro numa section... tudo depende da necessidade)
+        - Não possui atributos específicos, somente os globais
+    -->
+
+<!--
+        <main></main>
+
+        - Apenas 1 main por página, diretamente no body
+        - Não possui atributos específicos, somente os globais
+    -->
+
+<!--
+        <article></article>
+        -  Constrói um bloco com conteúdos relacionados uns com os outros
+        - Não possui atributos específicos, somente os globais
+    -->
+
+<!--
+        <aside></aside>
+
+        - Utilizado para conteúdos levemente relacionados ao conteúdo principal (da <main>)
+            - explicações
+            - glossários
+            - links extras
+            - biografia do autor
+            - infos do perfil
+        - Atributos: apenas globais
+    -->
+
+<!--
+        <footer></footer>
+
+        - Geralmente no final da página: informações do autor, copyright, contato, sitemap, botão voltar ao topo, etc
+        - Recebe atributos globais
+    -->
+
+<!--
+        <section></section>
+        -  Serve para se colocar seções na página | geralmente coloca-se um título e depois o conteúdo (um h2 seguido de um p, por exemplo)
+        - Pode ser colocado dentro de articles, criando-se tópicos dentro dele com a section | Pode também ser colocado dentro da main caso seja só uma seção...
+        - Recebe atributos globais
+    -->
+
+<header>
+    <nav></nav>
+</header>
+
+<article>
+    <h2>Receita 1</h2>
+    <p>Descrição da receita</p>
+
+    <section>
+        <h3>Ingredientes</h3>
+        <p>Preparação</p>
+    </section>
+</article>
+
+<article>
+    <h2>Receita 2</h2>
+    <h3>Ingredientes</h3>
+    <p>Preparação</p>
+</article>
+
+-------------------------------------------------
+<header>
+    <nav></nav>
+</header>
+
+<main>
+    <h1>Minhas receitas</h1>
+
+    <section>
+        <h2>Receita de bolo</h2>
+        <p>Preparação</p>
+    </section>
+
+</main>
+
+-------------------------------------------------
+
+<!--
+    Elementos não semânticos, para usos genéricos
+
+    <div></div>
+    - Usado se não conseguir achar um elemento de bloco semântico
+
+    <span></span>
+    - Usado se não conseguir achar um elemento de texto semântico
+
+    * Em ambas, use atributos globais como id e class para entregar maior significado
+-->
+
+<h1>Título destacado</h1>
+
+<!--
+    Supondo que no título eu quero destacar uma palavra, mas não utilizando o strong, posso utilizar o span:
+
+    <h1> Titulo <span  class="destaque"> destacado</span></h1>
+-->
+
+<!--
+    O  uso da section não tem como contexto o site todo, tem apenas uma seção de uma página no site - caso eu quisesse criar algo que tenha um contexto global no site inteiro, posso usar a div.
+
+    <div class="cart">
+        <h2>Carrinho de compras</h2>
+    </div>
+
+-->

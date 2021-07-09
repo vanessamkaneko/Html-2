@@ -1,0 +1,30 @@
+<!--
+    <video>
+
+        - src
+        - controls
+        - se não funcionar?
+            - fallback content
+        - source
+            - src
+            - type
+        - sobre serviços de terceiros: muito mais simples subir em plataformas de vídeo e só colocar o link depois =)
+
+        - autoplay
+        - preload: auto - antes da pessoa clicar no botão de iniciar, já iria carregando o vídeo | metadata - só carrega o essencial | none - não faz preload de nada antes de clicar no botão
+        - loop: se chegar ao fim do vídeo, inicia novamente
+        - muted: vídeo inicia mutado
+        poster: é colocada uma imagem de fundo antes do vídeo ser iniciado
+-->
+
+<video src="./nomedapasta/nomedoarq.mp4" controls></video>
+
+<video controls>
+    width="500"
+    height="400"
+    autoplay
+    preload="none"
+    loop
+    muted
+    <source src="./nomedapasta/nomedoarq.mp4" type="video/mp4">
+</video>
